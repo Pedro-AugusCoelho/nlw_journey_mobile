@@ -217,7 +217,7 @@ export default function Index() {
                             <Input.Field
                                 placeholder='Quem estará na viagem?'
                                 autoCorrect={false}
-                                value={emailsToInvite.length > 0 ? `${emailsToInvite.length} pessoas(a) convidada(s)`: ""}
+                                value={emailsToInvite.length > 0 ? `${emailsToInvite.length} pessoa(s) convidada(s)`: ""}
                                 onPress={() => {
                                     Keyboard.dismiss()
                                     setShowModal(MODAL.GUESTS)
@@ -235,10 +235,11 @@ export default function Index() {
                 </Button>
             </View>
 
-            <Text className='text-zinc-500 font-regular text-center text-base'>
-                Ao planejar sua viagem pela plann.er você automaticamente concorda com nossos {" "} 
-                <Text className='text-zinc-300 underline'>
-                    termos de políticas de privacidade.
+            <Text className="text-zinc-500 font-regular text-center text-base">
+                Ao planejar sua viagem pela plann.er você automaticamente concorda com
+                nossos{" "}
+                <Text className="text-zinc-300 underline">
+                termos de uso e políticas de privacidade.
                 </Text>
             </Text>
 
