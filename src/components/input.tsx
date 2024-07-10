@@ -20,6 +20,7 @@ type InputProps = ViewProps & {
 function Input({
   children,
   variant = "primary",
+  className,
   ...rest
 }: InputProps) {
   return (
@@ -31,6 +32,7 @@ function Input({
           "bg-zinc-950": variant === "secondary",
           "bg-zinc-900": variant === "tertiary",
         },
+        className
       )}
       {...rest}
     >
